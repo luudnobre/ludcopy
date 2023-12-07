@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio Profissional</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to bottom right, black, purple);
+            height: 200vh;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .top-bar {
+            background-color: black;
+            padding: 10px 20px;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: normal;
+            font-family: 'Hack', monospace;
+            color: white;
+        }
+
+        /* Estilizando os botões */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .button {
+            width: 200px;
+            height: 80px;
+            background-color: purple;
+            color: white;
+            border: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transform-style: preserve-3d;
+            perspective: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button:hover {
+            background-color: #7d3aff;
+            transform: translateY(-5px) translateZ(10px);
+            box-shadow: 0px 15px 20px rgba(125, 58, 255, 0.4);
+        }
+
+        /* Estilo para a seção Sobre Mim */
+        #sobre {
+            height: 100vh;
+            background-image: linear-gradient(to bottom right, black, purple);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            padding: 50px;
+        }
+
+        .about-me {
+            display: flex;
+            align-items: center;
+        }
+
+        .about-me img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid purple;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transform: rotateY(45deg) rotateZ(-10deg);
+            transition: all 0.5s ease;
+        }
+
+        .about-me img.show-on-scroll {
+            opacity: 1;
+            transform: rotateY(0) rotateZ(0);
+        }
+
+        .about-text {
+            text-align: left;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .about-text p {
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para os botões das habilidades */
+        .skills-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            gap: 20px;
+        }
+
+        .skill-button {
+            width: 150px;
+            height: 150px;
+            background-color: purple;
+            color: white;
+            border: 5px solid #ffffff;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skill-button:hover {
+            background-color: #7d3aff;
+            transform: scale(1.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <h1 class="home-link">Lud Copywriter</h1>
+    </div>
+
+    <div class="content">
+        <h1>Carrego a magia da escrita que <span>converte.</span></h1>
+    </div>
+
+    <div class="button-container">
+        <button class="button" onclick="scrollToSection('sobre')">Sobre Mim</button>
+        <button class="button" onclick="scrollToSection('habilidades')">Habilidades</button>
+        <button class="button" onclick="scrollToSection('trabalhos')">Trabalhos</button>
+        <button class="button" onclick="scrollToSection('contato')">Contato</button>
+    </div>
+
+    <div id="sobre">
+        <div class="about-me">
+            <img src="EU1.jpg" alt="Ludmila Nóbrega">
+            <div class="about-text">
+                <p>Uma copywriter recifense de 21 anos apaixonada por artes, escrita e tecnologia. Desde que me entendo por gente, o mundo das palavras sempre me fascinou. Lembro-me vividamente de como, desde a infância, fui cativada por histórias e pela capacidade mágica que as palavras têm de criar universos inteiros.</p>
+                <p>Essa paixão pela escrita nunca me deixou. Pelo contrário, cresceu comigo. Foi um caminho natural migrar para a área de copywriting, pois é onde consigo unir todas as minhas paixões em um só lugar. É incrível como posso usar minhas habilidades para conectar pessoas com ideias, produtos e histórias que realmente importam.</p>
+                <p>A tecnologia é outra paixão que sempre esteve ao meu lado. É fascinante como ela abre portas para novas formas de comunicação, possibilitando que histórias sejam contadas de maneiras inovadoras e impactantes.</p>
+                <p>Escrever não é apenas o que faço; é quem sou. Cada palavra que coloco no papel (ou na tela) é uma parte de mim, uma expressão da minha criatividade e dedicação ao ofício que escolhi seguir desde os primeiros traços da minha jornada.</p>
+                <p>E é assim, unindo paixão, criatividade e a constante busca por evolução, que me entrego a cada projeto, buscando sempre surpreender e encantar com as palavras.</p>
+                <p>E meu compromisso é entregar o melhor para o seu serviço, empresa e/ou projeto.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de habilidades -->
+    <div id="habilidades" class="skills-section">
+        <button class="skill-button">Criatividade</button>
+        <button class="skill-button">Compromisso</button>
+        <button class="skill-button">Habilidade com Tecnologia</button>
+        <button class="skill-button">Inteligência Emocional</button>
+        <button class="skill-button">Inglês Intermediário</button>
+        <button class="skill-button">Agilidade</button>
+    </div>
+    
+
+    <script>
+        
+    
+    </script>
+</body>
