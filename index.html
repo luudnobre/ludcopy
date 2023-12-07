@@ -183,6 +183,32 @@
         .contact-icons a:hover {
             transform: scale(1.1);
         }
+         style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 50px;
+        }
+
+        .signature {
+            display: inline-block;
+            position: relative;
+            animation: neonGlow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes neonGlow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+            }
+        }
+    </style>
     </style>
 </head>
 
@@ -227,7 +253,7 @@
     <div id="contato" class="contact-icons">
         <a href="https://instagram.com/ludcopy" target="_blank"><img src="insta.png" alt="Instagram" width="40"></a>
         <a href="https://github.com/luudnobre" target="_blank"><img src="GitHub-Mark-ea2971cee799.png" alt="GitHub" width="40"></a>
-        <a href="https://whatsapp.com/558186670193" target="_blank"><img src="wpp.png" alt="WhatsApp" width="40"></a>
+        <a href="https://api.whatsapp.com/send/?phone=5581986670193&text=Lud%2C+voc%C3%AA+poderia+me+ajudar+a+vender+mais%3F+&type=phone_number&app_absent=0" target="_blank"><img src="wpp.png" alt="WhatsApp" width="40"></a>
         <a href="https://youtube.com/channel/UCgKut0Z_zVcYZhP3GuIqIiw" target="_blank"><img src="youtube.png" alt="YouTube" width="40"></a>
     </div>
     
@@ -237,7 +263,18 @@
             var section = document.getElementById(sectionId);
             section.scrollIntoView({ behavior: 'smooth' });
         }
+        
     </script>
+    <body>
+      
+        
+        <div class="signature">
+            <p>coded by Lud</p>
+            <svg height="50" width="100">
+                <path d="M0,20 Q25,0 50,20 T100,20" stroke="#ff4da6" stroke-width="2" fill="none" />
+            </svg>
+        </div>
+    </body>
 </body>
 
 </html>
